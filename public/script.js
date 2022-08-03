@@ -13,9 +13,9 @@ socket.on("user-disconnected", userId => {
 
 // register with the peer server
 const myPeer = new Peer(undefined, {
-    host: "localhost",
-    port: "4000",
-    path: '/'
+    host: "/",
+    port: "3000",
+    path: '/peerjs'
 });
 
 myPeer.on("open", id => {
