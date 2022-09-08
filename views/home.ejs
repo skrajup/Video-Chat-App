@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>HomePage</title>
+</head>
+<body>
+    <div class="custom-container">
+        <div class="upper">
+            <div class="menu-bar">
+                <div class="left">
+                    <div class="logo">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" width="60" height="40" viewBox="-13.1265 -18 113.763 108"><path fill="#00832d" d="M49.5 36l8.53 9.75 11.47 7.33 2-17.02-2-16.64-11.69 6.44z"/><path fill="#0066da" d="M0 51.5V66c0 3.315 2.685 6 6 6h14.5l3-10.96-3-9.54-9.95-3z"/><path fill="#e94235" d="M20.5 0L0 20.5l10.55 3 9.95-3 2.95-9.41z"/><path fill="#2684fc" d="M20.5 20.5H0v31h20.5z"/><path fill="#00ac47" d="M82.6 8.68L69.5 19.42v33.66l13.16 10.79c1.97 1.54 4.85.135 4.85-2.37V11c0-2.535-2.945-3.925-4.91-2.32zM49.5 36v15.5h-29V72h43c3.315 0 6-2.685 6-6V53.08z"/><path fill="#ffba00" d="M63.5 0h-43v20.5h29V36l20-16.57V6c0-3.315-2.685-6-6-6z"/></svg>
+                    </div>
+                    <div class="brand-name">
+                        Google Meet
+                    </div>
+                </div>
+                <div class="right">
+                    <div>00:48 Thu, 4 Aug</div>
+                    <div><i class="fa-regular fa-circle-question"></i></div>
+                    <div><i class="fa-regular fa-message"></i></div>
+                    <div><i class="fa-solid fa-gear"></i></div>
+                    <div><i class="fa-solid fa-list-ul"></i></div>
+                    <div><i class="fa-regular fa-user"></i></div>
+                </div>
+            </div>
+        </div>
+        <div class="middle">
+            <div class="big-text-heading">
+                Fake Google Meet Clone
+            </div>
+            <div class="small-text-content">
+                A computer is a digital electronic machine that can be programmed to carry out sequences of arithmetic or logical operations (computation) automatically. Modern computers can perform generic sets of operations known as programs. These programs enable computers to perform a wide range of tasks.
+            </div>
+            <div class="meet-btns">
+                <div class="create-meet-btn 
+                meet-btn">
+                    <a href="/<%=roomId%>"><i class="fa-solid fa-video"></i> New meeting</a>
+                </div>
+                <div class="join-meet-btn 
+                meet-btn">
+                    <i class="fa-regular fa-keyboard"></i>
+                    <form action="/join__meet" method="get">
+                        <input type="text" placeholder="Enter a code or link">
+                        <input type="submit" value="Join">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="lower">
+
+        </div>
+    </div>
+</body>
+</html>

@@ -14,7 +14,13 @@ app.set("view engine", "ejs");
 app.use(express.static("public"));
 
 app.get("/", (req, res)=>{
-    res.redirect(`/${uuidv4()}`);
+    res.render("index");
+    // res.redirect(`/${uuidv4()}`);
+});
+
+app.get("/home", (req, res)=>{
+    res.render("home", {roomId: uuidv4()});
+    // res.redirect(`/${uuidv4()}`);
 });
 
 app.get("/:room", (req, res)=>{
@@ -32,7 +38,13 @@ io.on("connection", socket => {
         socket.on("disconnect", ()=>{
             socket.to(roomId).emit("user-disconnected", userId);
         });
+
+        socket.on("message", message => {
+            io.to(roomId).emit("newMessage", message);
+        });
     });
+
+
 });
 
 server.listen(3000, ()=>{

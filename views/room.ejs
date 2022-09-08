@@ -4,26 +4,149 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        #video-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, 300px);
-            grid-auto-rows: 300px;
-        }
-
-        video {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/room.css">
+    <title>Room</title>
 </head>
 <body>
-    <div id="video-grid">
 
+<div class="custom-container">
+    <div class="upper">
+        <div class="left">
+            <div id="video-flex">
+                <!-- all videos here -->
+            </div>
+        </div>
+        <div class="right">
+                <div class="chat-header">
+                    <h3>In-call messages</h3>
+                </div>
+                <div class="chat-window">
+                    <ul class="msg-table">
+                        <li>asghsafhghsah</li>
+                        <li>asghsafhghsah</li>
+                        <li>asghsafhghsah</li>
+                        <li>asghsafhghsah</li>
+                        <li>asghsafhghsah</li>
+                        <li>asghsafhghsah</li>
+                        <li>asghsafhghsah</li>
+                        <li>asghsafhghsah</li>
+                        <li>asghsafhghsah</li>
+                        <li>asghsafhghsah</li>
+                        <li>asghsafhghsah</li>
+                        <li>asghsafhghsah</li>
+                        <li>asghsafhghsah</li>
+                        <li>asghsafhghsah</li>
+                        <li>asghsafhghsah</li>
+                        <li>asghsafhghsah</li>
+                        <li>asghsafhghsah</li>
+                        <li>asghsafhghsah</li>
+                        <li>asghsafhghsah</li>
+                        <li>asghsafhghsah</li>
+                        <li>asghsafhghsah</li>
+                        <li>asghsafhghsah</li>
+                        <li>asghsafhghsah</li>
+                        <li>asghsafhghsah</li>
+                        <li>asghsafhghsah</li>
+                        <li>asghsafhghsah</li>
+                        <li>asghsafhghsah</li>
+                        <li>asghsafhghsah</li>
+                        <li>asghsafhghsah</li>
+                        <li>asghsafhghsah</li>
+                        <li>asghsafhghsah</li>
+                        <li>asghsafhghsah</li>
+                        <li>asghsafhghsah</li>
+                        <li>asghsafhghsah</li>
+                        <li>asghsafhghsah</li>
+                        <li>asghsafhghsah</li>
+                        <li>asghsafhghsah</li>
+                        <li>asghsafhghsah</li>
+                        <li>asghsafhghsah</li>
+                        <li>asghsafhghsah</li>
+                        <li>asghsafhghsah</li>
+                        <li>asghsafhghsah</li>
+                        <li>asghsafhghsah</li>
+                        <li>asghsafhghsah</li>
+                        <li>asghsafhghsah</li>
+                        <li>asghsafhghsah</li>
+                        <li>asghsafhghsah</li>
+                        <li>asghsafhghsah</li>
+                        <li>asghsafhghsah</li>
+                        <li>asghsafhghsah</li>
+                        <li>asghsafhghsah</li>
+                        <li>asghsafhghsah</li>
+                        <li>asghsafhghsah</li>
+                        <li>asghsafhghsah</li>
+                        <li>asghsafhghsah</li>
+                        <li>asghsafhghsah</li>
+                        <li>asghsafhghsah</li>
+                        <li>asghsafhghsah</li>
+                        <li>asghsafhghsah</li>
+                        <li>asghsafhghsah</li>
+                        <li>asghsafhghsah</li>
+                        <li>asghsafhghsah</li>
+                        <li>asghsafhghsah</li>
+                        <li>asghsafhghsah</li>
+                        <li>asghsafhghsah</li>
+                        <li>asghsafhghsah</li>
+                        <li>asghsafhghsah</li>
+                        <li>asghsafhghsah</li>
+                        <li>asghsafhghsah</li>
+                        <li>asghsafhghsah</li>
+                    </ul>
+                </div>
+            <div class="input-msg">
+                <form action="">
+                    <input name="input__msg" type="text" placeholder="enter your message">
+                </form>
+            </div>
+        </div>
     </div>
 
+    <div class="lower">
+        <div class="lower-left">
+            <div class="time"></div>
+            <div class="meet-id" style="font-size: x-small;"><%=roomId%></div>
+        </div>
+        <div class="lower-middle">
+            <div class="meet-controller microphone-btn" onclick="muteUnmute()">
+                <i class="fa-solid fa-microphone"></i>
+            </div>
+            <div class="meet-controller video-btn" onclick="stopVideo()">
+                <i class="fa-solid fa-video"></i>
+            </div>
+            <div class="meet-controller">
+                <i class="fa-regular fa-closed-captioning"></i>
+            </div>
+            <div class="meet-controller">
+                <i class="fa-solid fa-arrow-up-from-bracket"></i>
+            </div>
+            <div class="meet-controller">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+            </div>
+            <div class="meet-controller call-abort-btn">
+                <i class="fa-solid fa-phone-flip"></i>
+            </div>
+        </div>
+        <div class="lower-right">
+            <div class="meet-tool">
+                <i class="fa-solid fa-circle-exclamation"></i>
+            </div>
+            <div class="meet-tool">
+                <i class="fa-solid fa-user-group"></i>
+            </div>
+            <div class="meet-tool">
+                <i class="fa-regular fa-message"></i>
+            </div>
+            <div class="meet-tool">
+                <i class="fa-solid fa-shapes"></i>  
+            </div>
+            <div class="meet-tool">
+                <i class="fa-solid fa-briefcase"></i>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 
@@ -33,6 +156,7 @@
     </script>
     <script src="https://unpkg.com/peerjs@1.4.5/dist/peerjs.min.js" defer></script>
     <script src="/socket.io/socket.io.js" defer></script>
-    <script src="/script.js" defer></script>
+    <script src="/js/script.js" defer></script>
+    <script src="/js/room.js"></script>
 </body>
 </html>
